@@ -1,0 +1,162 @@
+/* -> MODELO
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* SELECTORES
+-> *                             -> UNIVERSAL
+-> h1 | h2 | button | input | p  -> de tipo
+-> .nombreClase1 o .nombreC2     -> clases
+-> #is-element                   -> ID
+-> [nombre="especifico"]         -> POR atributo //ponerCualquierNombreComoAtributoEnElHTML
+-> h2 p u b span  //  .nonbreDeClase p            -> Descendiente //se escribe 1ro los elementos de afuera hasta llegar la que deseas
+-> b : hover (hover es cuando pones el mouse por encima )        -> Pseudoclases  // puedes poner el color: red  -> cuando pases el mouse encima de la clase se volverá rojo
+->          ->
+
+*/
+
+#element-for-modify {
+    color: blue;
+    
+}
+
+/*
+
+NORMALIZAR: agregar en el archivo normlalize
+
+en img:
+-> max-width: 100%;         -> hace que la imagen conseve su tamaño al 100%
+
+en * :  
+-> box-sizing: border-box;  ->contraparte(content-box) conseva el tamaño de la caja con los diferentes cambios
+-> padding: 0; -> el "0" se multiplica por cualquier unidad
+-> margin: 0; 
+
+=========================================
+
+
+
+-> display:   --> (inline-block) para cambiar las propiedades de lo que ocupa un elemento
+para h2: 
+-> height   PARA ESTE NO FUNCIONA
+-> width    PARA ESTE NO FUNCIONA
+
+
+p: 
+-> height
+-> width
+=====================================================
+
+PARA CAJAS :
+<div></div>
+-->   display: inline-block    <--
+
+-> background-color:    -> (red) color de fondo 
+-> padding:             ->(RESUME LO DE ABAJO)-> distancia entre el texto y el brode de la caja
+    > el orden es...  top, right, bottom, left. (10px 20px 30px 40px) -> se puede dar solo top y sera lo mismo para botton
+    -> padding-top: 
+    -> padding-right: 
+    -> padding-top: 
+    -> padding-botton: 
+-> height:               -> altura de la caja
+-> width:                -> ancho de la caja
+-> margin: (auto-> centra el bloque)-> distancia entre 2 cajas = q el padding 
+    -> margin-top:
+    -> margin-right:
+    -> margin-bottom:
+    -> margin-left:
+-> border-radius:        -> (10px | 50%)borde redondeado 
+-> border:              -> borde para adentro
+    orden:  (10px)borde de caja, estilo(solid|dasher|double|grove|inset(con 2 colores)|ridge), color
+    ->border-width|-color...
+-> opacity:      (.1 | 0.1 | .2)         -> transparencia del contenido de la caja
+====================================================
+BOX-MODEL:  
+
+-> content --> contenido
+    line-height: ->modifica el tamaño de la linea
+-> padding --> la separación entre el texto(contenido) y los bordes de la caja
+    padding:    
+-> border  --> el borde (esta fuera del padding)
+    border:     4px solid red
+-> margin  --> tamaño de lo que esta fuera de la caja (la separación entre las cajas)
+    margin:     50px auto
+==================================================
+
+-> box-shadow:           -> sombra envolvente a la caja
+                         -> eje x, eje y, tamaño de la sombra(desenfoque), cuanto borde, color
+    orden: 10px 10px 10px 0 #000
+PARA INTENSIFICAR EL SHADOW PONES COMA Y LUEGO PEGAS (10px 10px 10px 0 #000, 10px 10px 10px 0 #000;)
+-> text-shadow:          -> sombra al texto
+                         -> eje x, eje y, tamaño de la sombra(desenfoque), color
+-> transform: rotate(45deg); <- para darle una rotación a la caja
+=======================================================================================================================================
+
+OUTLINE
+-> outline: 10px solid blue ->  contorno alrededor del cuadro -> funciona por orden de creación
+
+POSITION -> modifica el orden html
+-> position:        -> 
+    
+    RELATIVE  : se mantiene donde estaba pero permite posicionar relativa a su propio sistema de coordenadas
+        ADQUIERE LAS SIGUIENTES CARACTERISTICAS: -> adquiere z-index: encima de otra caja (eje z)
+        PARA PONER DEBAJO -> PONER A LA OTRA CAJA POSITION RELATIVE
+        top:
+        left: 
+        right: 
+        botton:
+        z-index: (0 | 1 | 2 | 3 | 4 | 99 | 999) recomenzado 50 espacios en tre cada elemento
+            para poner a un hijo detras de un padre es con -1 y le pacre no tiene q estar definido  
+    
+    ABSOLUTE   : no reserva el espacio 
+
+
+    STATIC
+    FIXED
+    STICKY
+
+-> D
+->
+->
+->
+->
+
+UNIDAD DE MEDIDA:
+--> em <----> 16px -> es diferente por navegador | PROPIEDAD -> adopta el valor tomado desde arriba (hereda)
+--> vw <----> (0-100) -> Viewport Width | ancho (vw) el ancho de la pantalla en porcentaje 
+--> vh <----> (0-100) -> Viewport Height | altura (vh) 
+--> %  <----> porcentaje de la caja que lo contiene
+
+PROPIEDADES DE LA TEXTO (LETRA):
+-> font-size:   -> (medida-> 1em...) tamaño de la letra
+-> font-family: -> (Georgia, cursive) tipografia tipo|estilo de letra -> se pone coma para tomar como segunda opción si es que no ese encuentra la 1ra fuente.
+-> line-height: -> (1) lo que ocupa en altura 1 es por defecto -> si aumenta, ocupa x2, x3 pero distibuido en los extremos superiores e inferiores
+-> font-weight: -> (100|400|600|700|800|900) el grosor de la letra, cambia por tipografias
+-> color:       -> (red) cambia color de letra
+-> text-aling: center -> centra el texto en a caja
+
+
+
+*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+
+div {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    display: inline-block;
+}
